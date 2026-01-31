@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --tron-blue: 34 211 238; /* cyan-400 */
+    --grid-border: 241 245 249; /* slate-100 */
+  }
+}
+
+.text-tron-blue { color: rgb(var(--tron-blue)); }
+.border-tron-blue { border-color: rgb(var(--tron-blue)); }
+.shadow-halo { box-shadow: 0 0 15px rgba(var(--tron-blue), 0.3); }

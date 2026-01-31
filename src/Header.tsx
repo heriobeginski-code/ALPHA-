@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Calendar, ChevronDown, User, Zap } from 'lucide-react';
+import { Calendar, ChevronDown, Zap } from 'lucide-react';
+
+interface HeaderProps {
+  currentView: string;
+  setView: (view: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
 // RINZLER V6.0 Weekly Protocol
 const weeklyPlanner = {
